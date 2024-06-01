@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CMRRSetting>
+	<!--
+		Attributes
+		name: Display name (only used for notify)
+		match: matching pattern with Regular expression
+		replaceTo: replace pattern with Regular expression
+		notifySeconds: display balloon when replace executed (seconds), 0: no balloon display
+		goNext: execute next setting even replacement executed. When this setting as true, you can use multiple settings like chain.
+	-->
+	<setting
+		name="Test Setting"
+		match="test message"
+		replaceTo="app running"
+		notifySeconds ="5"
+		goNext="true" />
+	<setting
+		name="Test Setting2"
+		match="app running"
+		replaceTo="final convert"
+		notifySeconds ="0"
+		goNext="false" />
+	<setting
+		name="Test Setting3"
+		match="[0-9]{5}"
+		replaceTo="[$0]"
+		notifySeconds ="0"
+		goNext="false" />
+
+</CMRRSetting>
