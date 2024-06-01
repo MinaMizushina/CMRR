@@ -66,7 +66,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="binary\ClipboardMonitorRegexReplace.exe.config" />
     <None Include="Resources\MainIcon.ico" />
+    <Content Include="binary\ClipboardMonitorRegexReplace.exe" />
+    <Content Include="binary\ClipboardMonitorRegexReplace.pdb" />
+    <Content Include="binary\setting.xml" />
     <Content Include="setting.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
